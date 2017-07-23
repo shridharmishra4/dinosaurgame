@@ -213,7 +213,6 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         
         if let pb = dinoSpriteNode.physicsBody {
             pb.applyImpulse(CGVector(dx:0, dy:10), at: dinoSpriteNode.position)
-            print("jump")
         }
     }
     
@@ -309,7 +308,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         
         if x != 2 {
             let ob = SKSpriteNode(imageNamed: "Obstacle2")
-            let scale = CGFloat(drand48() * 0.4 + 0.33)
+            let scale = CGFloat(drand48() * 0.3 + 0.37)
             ob.setScale(scale)
             ob.position = CGPoint(x: self.frame.maxX-10, y: ob.size.height/2 + self.frame.height * 0.33)
 //            ob.physicsBody = SKPhysicsBody(texture: SKTexture(imageNamed: "Obstacle2"), size: ob.size)
@@ -327,8 +326,14 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
                 pb.friction = 0
                 pb.linearDamping = 0
                 pb.angularDamping = 0
-                pb.velocity = CGVector(dx: -140, dy: 0)
+                pb.velocity = CGVector(dx: -200, dy: 0)
             }
+
+            if (currentScore % 13 == 0){
+                print(currentScore % 13)
+                ob.physicsBody?.velocity.dx -= 10
+            }
+            
             self.addChild(ob)
             
             DispatchQueue.main.asyncAfter(deadline: .now() + 14.0, execute: {
@@ -338,10 +343,9 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
             })
         }
         
+        let randDelay = drand48() * 0.1 - Double(currentScore) / 1000.0
         
-        let randDelay = drand48() * 0.3 - Double(currentScore) / 1000.0
-        
-        DispatchQueue.main.asyncAfter(deadline: .now() + 1.5 + randDelay, execute: {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.9 + randDelay, execute: {
             if self.shouldSpawnObstacle == true {
                 self.spawnObstacle()
             }
