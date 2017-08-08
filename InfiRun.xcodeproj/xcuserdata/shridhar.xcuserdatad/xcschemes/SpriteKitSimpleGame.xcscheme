@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "35F7AA361D9EE88E009C4036"
-               BuildableName = "PikaRun.app"
-               BlueprintName = "PikaRun"
-               ReferencedContainer = "container:PikaRun.xcodeproj">
+               BuildableName = "InfiRun.app"
+               BlueprintName = "InfiRun"
+               ReferencedContainer = "container:InfiRun.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "35F7AA361D9EE88E009C4036"
-            BuildableName = "PikaRun.app"
-            BlueprintName = "PikaRun"
-            ReferencedContainer = "container:PikaRun.xcodeproj">
+            BuildableName = "InfiRun.app"
+            BlueprintName = "InfiRun"
+            ReferencedContainer = "container:InfiRun.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -56,9 +56,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "35F7AA361D9EE88E009C4036"
-            BuildableName = "PikaRun.app"
-            BlueprintName = "PikaRun"
-            ReferencedContainer = "container:PikaRun.xcodeproj">
+            BuildableName = "InfiRun.app"
+            BlueprintName = "InfiRun"
+            ReferencedContainer = "container:InfiRun.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -75,9 +75,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "35F7AA361D9EE88E009C4036"
-            BuildableName = "PikaRun.app"
-            BlueprintName = "PikaRun"
-            ReferencedContainer = "container:PikaRun.xcodeproj">
+            BuildableName = "InfiRun.app"
+            BlueprintName = "InfiRun"
+            ReferencedContainer = "container:InfiRun.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

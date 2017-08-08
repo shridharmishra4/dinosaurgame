@@ -1,10 +1,3 @@
-//
-//  AppDelegate.swift
-//  SpriteKitSimpleGame
-//
-//  Created by Main Account on 9/30/16.
-//  Copyright © 2016 Razeware LLC. All rights reserved.
-//
 
 import UIKit
 

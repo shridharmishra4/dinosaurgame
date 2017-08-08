@@ -7,29 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		04A82F4A1F3A15260096B02F /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04A82F491F3A15260096B02F /* StoreKit.framework */; };
+		04A82F4C1F3A16380096B02F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04A82F4B1F3A16380096B02F /* Assets.xcassets */; };
 		35F7AA3B1D9EE88E009C4036 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35F7AA3A1D9EE88E009C4036 /* AppDelegate.swift */; };
 		35F7AA411D9EE88E009C4036 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35F7AA401D9EE88E009C4036 /* GameScene.swift */; };
 		35F7AA431D9EE88E009C4036 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35F7AA421D9EE88E009C4036 /* GameViewController.swift */; };
 		35F7AA461D9EE88E009C4036 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35F7AA441D9EE88E009C4036 /* Main.storyboard */; };
-		35F7AA481D9EE88E009C4036 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 35F7AA471D9EE88E009C4036 /* Assets.xcassets */; };
 		35F7AA4B1D9EE88E009C4036 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35F7AA491D9EE88E009C4036 /* LaunchScreen.storyboard */; };
-		35F7AA551D9EEAC9009C4036 /* background-music-aac.caf in Resources */ = {isa = PBXBuildFile; fileRef = 35F7AA531D9EEAC9009C4036 /* background-music-aac.caf */; };
-		35F7AA561D9EEAC9009C4036 /* pew-pew-lei.caf in Resources */ = {isa = PBXBuildFile; fileRef = 35F7AA541D9EEAC9009C4036 /* pew-pew-lei.caf */; };
-		35F7AA581D9EEE12009C4036 /* GameOverScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35F7AA571D9EEE12009C4036 /* GameOverScene.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		35F7AA371D9EE88E009C4036 /* PikaRun.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PikaRun.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		04A82F491F3A15260096B02F /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		04A82F4B1F3A16380096B02F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		35F7AA371D9EE88E009C4036 /* InfiRun.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InfiRun.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		35F7AA3A1D9EE88E009C4036 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		35F7AA401D9EE88E009C4036 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
 		35F7AA421D9EE88E009C4036 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		35F7AA451D9EE88E009C4036 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		35F7AA471D9EE88E009C4036 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		35F7AA4A1D9EE88E009C4036 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		35F7AA4C1D9EE88E009C4036 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		35F7AA531D9EEAC9009C4036 /* background-music-aac.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "background-music-aac.caf"; sourceTree = "<group>"; };
-		35F7AA541D9EEAC9009C4036 /* pew-pew-lei.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "pew-pew-lei.caf"; sourceTree = "<group>"; };
-		35F7AA571D9EEE12009C4036 /* GameOverScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameOverScene.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04A82F4A1F3A15260096B02F /* StoreKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -46,6 +43,7 @@
 		04CC8BFF1F05712B00FCFFCB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				04A82F491F3A15260096B02F /* StoreKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -53,7 +51,7 @@
 		35F7AA2E1D9EE88E009C4036 = {
 			isa = PBXGroup;
 			children = (
-				35F7AA391D9EE88E009C4036 /* DinoGame */,
+				35F7AA391D9EE88E009C4036 /* InfiRun */,
 				35F7AA381D9EE88E009C4036 /* Products */,
 				04CC8BFF1F05712B00FCFFCB /* Frameworks */,
 			);
@@ -62,12 +60,12 @@
 		35F7AA381D9EE88E009C4036 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				35F7AA371D9EE88E009C4036 /* PikaRun.app */,
+				35F7AA371D9EE88E009C4036 /* InfiRun.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		35F7AA391D9EE88E009C4036 /* DinoGame */ = {
+		35F7AA391D9EE88E009C4036 /* InfiRun */ = {
 			isa = PBXGroup;
 			children = (
 				35F7AA521D9EEAC9009C4036 /* Sounds */,
@@ -75,20 +73,17 @@
 				35F7AA401D9EE88E009C4036 /* GameScene.swift */,
 				35F7AA421D9EE88E009C4036 /* GameViewController.swift */,
 				35F7AA441D9EE88E009C4036 /* Main.storyboard */,
-				35F7AA471D9EE88E009C4036 /* Assets.xcassets */,
+				04A82F4B1F3A16380096B02F /* Assets.xcassets */,
 				35F7AA491D9EE88E009C4036 /* LaunchScreen.storyboard */,
 				35F7AA4C1D9EE88E009C4036 /* Info.plist */,
-				35F7AA571D9EEE12009C4036 /* GameOverScene.swift */,
 			);
-			name = DinoGame;
+			name = InfiRun;
 			path = SpriteKitSimpleGame;
 			sourceTree = "<group>";
 		};
 		35F7AA521D9EEAC9009C4036 /* Sounds */ = {
 			isa = PBXGroup;
 			children = (
-				35F7AA531D9EEAC9009C4036 /* background-music-aac.caf */,
-				35F7AA541D9EEAC9009C4036 /* pew-pew-lei.caf */,
 			);
 			path = Sounds;
 			sourceTree = "<group>";
@@ -96,9 +91,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		35F7AA361D9EE88E009C4036 /* PikaRun */ = {
+		35F7AA361D9EE88E009C4036 /* InfiRun */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 35F7AA4F1D9EE88E009C4036 /* Build configuration list for PBXNativeTarget "PikaRun" */;
+			buildConfigurationList = 35F7AA4F1D9EE88E009C4036 /* Build configuration list for PBXNativeTarget "InfiRun" */;
 			buildPhases = (
 				35F7AA331D9EE88E009C4036 /* Sources */,
 				35F7AA341D9EE88E009C4036 /* Frameworks */,
@@ -108,9 +103,9 @@
 			);
 			dependencies = (
 			);
-			name = PikaRun;
+			name = InfiRun;
 			productName = SpriteKitSimpleGame;
-			productReference = 35F7AA371D9EE88E009C4036 /* PikaRun.app */;
+			productReference = 35F7AA371D9EE88E009C4036 /* InfiRun.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -121,7 +116,7 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0800;
 				LastUpgradeCheck = 0830;
-				ORGANIZATIONNAME = "Razeware LLC";
+				ORGANIZATIONNAME = "shridhar mishra";
 				TargetAttributes = {
 					35F7AA361D9EE88E009C4036 = {
 						CreatedOnToolsVersion = 8.0;
@@ -129,13 +124,13 @@
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.InAppPurchase = {
-								enabled = 0;
+								enabled = 1;
 							};
 						};
 					};
 				};
 			};
-			buildConfigurationList = 35F7AA321D9EE88E009C4036 /* Build configuration list for PBXProject "PikaRun" */;
+			buildConfigurationList = 35F7AA321D9EE88E009C4036 /* Build configuration list for PBXProject "InfiRun" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -148,7 +143,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				35F7AA361D9EE88E009C4036 /* PikaRun */,
+				35F7AA361D9EE88E009C4036 /* InfiRun */,
 			);
 		};
 /* End PBXProject section */
@@ -158,10 +153,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				35F7AA551D9EEAC9009C4036 /* background-music-aac.caf in Resources */,
 				35F7AA461D9EE88E009C4036 /* Main.storyboard in Resources */,
-				35F7AA481D9EE88E009C4036 /* Assets.xcassets in Resources */,
-				35F7AA561D9EEAC9009C4036 /* pew-pew-lei.caf in Resources */,
+				04A82F4C1F3A16380096B02F /* Assets.xcassets in Resources */,
 				35F7AA4B1D9EE88E009C4036 /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -175,7 +168,6 @@
 			files = (
 				35F7AA411D9EE88E009C4036 /* GameScene.swift in Sources */,
 				35F7AA431D9EE88E009C4036 /* GameViewController.swift in Sources */,
-				35F7AA581D9EEE12009C4036 /* GameOverScene.swift in Sources */,
 				35F7AA3B1D9EE88E009C4036 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -306,6 +298,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.shridhar.PikaRun;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -320,13 +313,14 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.shridhar.PikaRun;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		35F7AA321D9EE88E009C4036 /* Build configuration list for PBXProject "PikaRun" */ = {
+		35F7AA321D9EE88E009C4036 /* Build configuration list for PBXProject "InfiRun" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				35F7AA4D1D9EE88E009C4036 /* Debug */,
@@ -335,7 +329,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		35F7AA4F1D9EE88E009C4036 /* Build configuration list for PBXNativeTarget "PikaRun" */ = {
+		35F7AA4F1D9EE88E009C4036 /* Build configuration list for PBXNativeTarget "InfiRun" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				35F7AA501D9EE88E009C4036 /* Debug */,

@@ -32,6 +32,8 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     let iron3 = SKTexture(imageNamed: "run3")
     let iron4 = SKTexture(imageNamed: "run4")
     var dinoSpriteNode = SKSpriteNode(imageNamed: "run1")
+//    let background1 = SKSpriteNode(imageNamed: "ground")
+//    let background2 = SKSpriteNode(imageNamed: "ground")
 
     
     override func didMove(to view: SKView) {
@@ -39,12 +41,46 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
             sceneCreated = true
             createSceneContents()
         }
+//        background1.position = CGPoint(x:background1.position.x, y:background1.position.y )
+//        background2.position = CGPoint(x:background2.position.x, y:background2.position.y )
+        
+
     }
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?)
     {
         jump()
     }
     
+    
+//    func backgroudScrollUpdate(){
+//        background1.position = CGPoint(x: background1.position.x - 15, y: background1.position.y)
+//        background2.position = CGPoint(x: background2.position.x - 15, y: background2.position.y)
+////        if background2.position.x <= -self.frame.size.width {
+////            print(self.frame.size.width)
+////            print("catch1")
+////            background1.position = CGPoint(x: self.frame.size.width, y: background1.position.y)
+////        }
+////        if background1.position.x <= -self.frame.size.width {
+////            print("catch2")
+////            background2.position = CGPoint(x: self.frame.size.width, y: background2.position.y)
+////        }
+////        if(background1.position.x < -background1.size.width)
+////        {
+////            background1.position = CGPoint(x:background1.position.x + background2.size.width , y:background2.position.y)
+////        }
+////        if(background2.position.x < -background2.size.width)
+////        {
+////            background2.position = CGPoint(x:background2.position.x + background1.size.width, y:background1.position.y)
+////        }
+//        if(background1.position.x < -self.frame.size.width)
+//        {
+//            background1.position = CGPoint(x:self.frame.size.width , y:background2.position.y)
+//        }
+//        if(background2.position.x < -self.frame.size.width)
+//        {
+//            background2.position = CGPoint(x:self.frame.size.width, y:background1.position.y)
+//        }
+//    }
     func startGame() {
         srand48(Int(arc4random()))
         
@@ -65,21 +101,37 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         self.spawnObstacle()
         self.spawnCloud()
         dinoSpriteNode.isPaused = false
+//        background1.position = CGPoint(x:background1.position.x, y:background1.position.y )
+//        background2.position = CGPoint(x:background2.position.x, y:background2.position.y )
+
+        
+        
         
     }
     
     func createSceneContents() {
-        self.topSky.color = UIColor(hue: 0.55, saturation: 0.14, brightness: 0.97, alpha: 1)
+        self.topSky.color = UIColor(hue: 0.56, saturation: 0.14, brightness: 0.98, alpha: 1)
         self.topSky.anchorPoint = CGPoint(x: 0.5, y: 1)
         self.topSky.position = CGPoint(x: frame.midX, y: frame.height)
         self.topSky.zPosition = -40
-        self.topSky.size = CGSize(width: self.frame.width, height: self.frame.height * 0.67)
+        self.topSky.size = CGSize(width: self.frame.width, height: self.frame.height * 0.7)
         
-        let yPos : CGFloat = size.height * 0.33
+        let yPos : CGFloat = size.height * 0.30
         let startPoint = CGPoint(x: 0, y: yPos)
         let endPoint = CGPoint(x: size.width, y: yPos)
         
-        let groundSize = CGSize(width: size.width, height: size.height * 0.33)
+//        background1.anchorPoint = CGPoint(x:0,y:1)
+//        background1.position = CGPoint(x:0,y:yPos)
+//        background1.zPosition = -10
+//
+//        self.addChild(background1)
+//        
+//        background2.anchorPoint = CGPoint(x:0,y:1)
+//        background2.position = CGPoint(x:0,y:yPos)
+//        background2.zPosition = -10
+//        self.addChild(background2)
+        
+        let groundSize = CGSize(width: size.width, height: size.height * 0.30)
         self.groundNode = SKShapeNode(rect: CGRect(origin: CGPoint(), size: groundSize))
         self.groundNode.fillColor = SKColor(red:0.99, green:0.92, blue:0.55, alpha:1.0)
         self.groundNode.strokeColor = SKColor.clear
@@ -116,8 +168,9 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         self.spawnCloud()
     }
     
+    
     func titleLabel() -> SKLabelNode {
-        titleNode.text = "PikaRun"
+        titleNode.text = "InfiRun"
         titleNode.fontSize = 10
         titleNode.position = CGPoint(x: self.frame.midX, y: self.frame.maxY-10)
         titleNode.fontColor = dinoDarkColor
@@ -226,7 +279,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
             
             if x == 0 {
                 let oi = SKSpriteNode(imageNamed: "cloud1")
-                let scale = CGFloat(drand48() * 1 + 0.6)
+                let scale = CGFloat(drand48() * 1 + 0.7)
                 let rand_int = CGFloat(arc4random_uniform(20) + 20)
                 oi.setScale(scale)
                 oi.position = CGPoint(x: self.frame.maxX-20, y: self.frame.maxY - rand_int)
@@ -256,7 +309,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
             }
             else {
                 let oi = SKSpriteNode(imageNamed: "cloud2")
-                let scale = CGFloat(drand48() * 1 + 0.6)
+                let scale = CGFloat(drand48() * 1 + 0.7)
                 let rand_int = CGFloat(arc4random_uniform(15) + 20)
                 oi.setScale(scale)
                 oi.position = CGPoint(x: self.frame.maxX-20, y: self.frame.maxY - rand_int)
@@ -310,7 +363,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
             let ob = SKSpriteNode(imageNamed: "Obstacle2")
             let scale = CGFloat(drand48() * 0.3 + 0.37)
             ob.setScale(scale)
-            ob.position = CGPoint(x: self.frame.maxX-10, y: ob.size.height/2 + self.frame.height * 0.33)
+            ob.position = CGPoint(x: self.frame.maxX-10, y: ob.size.height/2 + self.frame.height * 0.3)
 //            ob.physicsBody = SKPhysicsBody(texture: SKTexture(imageNamed: "Obstacle2"), size: ob.size)
             ob.physicsBody = SKPhysicsBody(rectangleOf: CGSize(width: ob.size.width,
                                                                height: ob.size.height))
@@ -359,6 +412,8 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.1, execute: {
             if (self.shouldUpdateScore) {
                 self.updateScore()
+                //self.backgroudScrollUpdate()
+
             }
         })
     }
