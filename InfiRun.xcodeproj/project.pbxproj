@@ -18,7 +18,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		016806C19FBC9CB4FC39BF40 /* Pods-InfiRun.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InfiRun.release.xcconfig"; path = "Pods/Target Support Files/Pods-InfiRun/Pods-InfiRun.release.xcconfig"; sourceTree = "<group>"; };
 		04A82F491F3A15260096B02F /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		04CB095F1F3A5410003F75E4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = InfiRun/Assets.xcassets; sourceTree = SOURCE_ROOT; };
 		04CB09601F3A5410003F75E4 /* GameScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GameScene.swift; path = InfiRun/GameScene.swift; sourceTree = SOURCE_ROOT; };
@@ -29,7 +28,6 @@
 		04CB09691F3A5410003F75E4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Main.storyboard; sourceTree = "<group>"; };
 		35F7AA371D9EE88E009C4036 /* InfiRun.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InfiRun.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		97C9CB87CA9631A5F8F49534 /* Pods_InfiRun.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InfiRun.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C9AEB08331576337BF2ACEED /* Pods-InfiRun.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InfiRun.debug.xcconfig"; path = "Pods/Target Support Files/Pods-InfiRun/Pods-InfiRun.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,7 +76,6 @@
 				35F7AA391D9EE88E009C4036 /* InfiRun */,
 				35F7AA381D9EE88E009C4036 /* Products */,
 				04CC8BFF1F05712B00FCFFCB /* Frameworks */,
-				9D4A0BC201640DD532D89102 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -111,15 +108,6 @@
 			children = (
 			);
 			path = Sounds;
-			sourceTree = "<group>";
-		};
-		9D4A0BC201640DD532D89102 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				C9AEB08331576337BF2ACEED /* Pods-InfiRun.debug.xcconfig */,
-				016806C19FBC9CB4FC39BF40 /* Pods-InfiRun.release.xcconfig */,
-			);
-			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -382,7 +370,6 @@
 		};
 		35F7AA501D9EE88E009C4036 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C9AEB08331576337BF2ACEED /* Pods-InfiRun.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = DBZHR58TAL;
@@ -399,7 +386,6 @@
 		};
 		35F7AA511D9EE88E009C4036 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 016806C19FBC9CB4FC39BF40 /* Pods-InfiRun.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = DBZHR58TAL;
